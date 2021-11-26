@@ -35,7 +35,7 @@ git init
 git add .
 git status -->this shows the files which are modified
 git commit -m "uploading the modified files"
-git push origin master
+git push url of your repo
 go to your repository --.click on branch-->click on new pull request-->click on create pull request
 -->click on merge full request-->click on confirm merge
 
