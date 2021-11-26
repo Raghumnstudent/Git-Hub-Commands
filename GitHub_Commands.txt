@@ -1,0 +1,81 @@
+1) creating the files in local repository(GitHub 
+
+cd Desktop
+cd foldername
+git init  --->initiaziting the Git in this folder means creating working repository
+git add . --->adding the files in the folder into staged area for tracking
+git status ---> checking the status
+git commit -m "commit name" --->adding the files into local repository
+
+git log
+       commit da3aa87eafd9e4f93979de1d3285bd3aaaaa85d8 (HEAD -> master)
+       Author: Raghu M N <nraghu@zeomega.com> 
+       Date:   Tue Nov 23 11:02:26 2021 +0530
+
+
+2)Deleting the files in local repository and restoring again into same folder
+
+cd Desktop
+cd foldername
+git init  --->initiaziting the Git in this folder means creating working repository
+git add . --->adding the files in the folder into staged area for tracking
+git status ---> checking the status
+git commit -m "commit name" --->adding the files into local repository
+
+git log
+       commit da3aa87eafd9e4f93979de1d3285bd3aaaaa85d8 (HEAD -> master)
+       Author: Raghu M N <nraghu@zeomega.com> 
+       Date:   Tue Nov 23 11:02:26 2021 +0530
+
+git revert da3aa87eafd9e4f93979de1d3285bd3aaaaa85d8
+
+esp :wq
+
+git checkout HEAD~1 filename or (git restore --staged filename and then git restore filename)
+
+
+3) creating a repository in GitHub using HTTP (this method is easy)
+
+create repository manually in github
+open the GitHub bash in the folder, which folder files you want to upload
+In below, there is command like this ---> git remote add origin https://
+copy that
+git remote -v
+git push origin master
+
+
+4) creating a repository in GitHub using SSH
+git status
+ls -lrt
+ssh-keygen
+after above command press three times Enter
+copy the path it is in above like c://
+cat copied path  --->this gives key link
+copy that public key link
+login into GitHub-->go to setting-->select SSH and GPG keys
+click new SSh key --->give title then paste copied public key
+click new repository -->give name
+click on SSh protocal
+copy the link looks like git remote add origin
+execute that
+git push origin master
+yes for authentication for first time
+go and refresh the page
+cat index.html
+git log --oneline
+ 
+
+
+
+5)ignoring some files and uploading remaining files
+
+open GitHub bash in the folder, which folder files you want to upload
+type--> touch .gitignore
+above command create .gitignore file, open that and type file name you want to ignore with extention like raghu.css
+git init
+git add .
+git commit -m "uploading"
+git push url of your repository
+
+
+6) 
