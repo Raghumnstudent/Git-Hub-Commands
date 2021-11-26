@@ -11,7 +11,8 @@ git log
        Author: Raghu M N <nraghu@zeomega.com> 
        Date:   Tue Nov 23 11:02:26 2021 +0530
 
-git push url of your remote repository  (for first time uploading)
+git push url of your remote repository (with url type .git at the end of url)
+like this -->https://github.com/Raghumnstudent/Raju.git
 
 2)Downloading  the file from remote repository into local repository (to your pc)
 
@@ -26,7 +27,8 @@ git log
        Author: Raghu M N <nraghu@zeomega.com> 
        Date:   Tue Nov 23 11:02:26 2021 +0530
 
-git pull url of your remote repository
+git pull url of your remote repository (with url type .git at the end of url)
+like this -->https://github.com/Raghumnstudent/Raju.git
 
 3)Modifiying the already exsiting files, then uploading the files from local repository (pc) into remote repository
 
@@ -35,11 +37,13 @@ git init
 git add .
 git status -->this shows the files which are modified
 git commit -m "uploading the modified files"
-git push url of your repo
+git push url of your repo (with url type .git at the end of url)
+like this -->https://github.com/Raghumnstudent/Raju.git
+
 go to your repository --.click on branch-->click on new pull request-->click on create pull request
 -->click on merge full request-->click on confirm merge
 
-go to your repo 
+go to your repository
 
 
 4)Deleting the files in local repository and restoring again into same folder
@@ -69,7 +73,8 @@ open the GitHub bash in the folder, which folder files you want to upload
 In below, there is command like this ---> git remote add origin https://
 copy that
 git remote -v
-git push origin master
+git push url of ypur repository (with url type .git at the end of url)
+like this -->https://github.com/Raghumnstudent/Raju.git
 
 
 6) creating a repository in GitHub using SSH
@@ -103,6 +108,7 @@ From above command .gitignore file is created, open that and type file name you 
 git init
 git add .
 git commit -m "uploading"
-git push url of your repository
+git push url of your repository (with url type .git at the end of url)
+like this -->https://github.com/Raghumnstudent/Raju.git
 
 
