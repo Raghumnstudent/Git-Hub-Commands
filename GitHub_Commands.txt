@@ -1,26 +1,54 @@
-1) creating the files in local repository(GitHub 
+1) creating the files in local repository(from pc) and uploading files into remote repository
 
-cd Desktop
-cd foldername
+open the GiHub bash in folder, which folder files you want to upload by right click on mouse
 git init  --->initiaziting the Git in this folder means creating working repository
 git add . --->adding the files in the folder into staged area for tracking
 git status ---> checking the status
-git commit -m "commit name" --->adding the files into local repository
+git commit -m "commit name" --->adding the files into remote repository
 
 git log
        commit da3aa87eafd9e4f93979de1d3285bd3aaaaa85d8 (HEAD -> master)
        Author: Raghu M N <nraghu@zeomega.com> 
        Date:   Tue Nov 23 11:02:26 2021 +0530
 
+git push url of your remote repository  (for first time uploading)
 
-2)Deleting the files in local repository and restoring again into same folder
+2)Downloading  the file from remote repository into local repository (to your pc)
 
-cd Desktop
-cd foldername
+open the GiHub bash in folder, in which folder, the files are getting downloaded by right click on mouse
 git init  --->initiaziting the Git in this folder means creating working repository
 git add . --->adding the files in the folder into staged area for tracking
 git status ---> checking the status
-git commit -m "commit name" --->adding the files into local repository
+git commit -m "commit name" --->downloading  the files into local repository(
+
+git log
+       commit da3aa87eafd9e4f93979de1d3285bd3aaaaa85d8 (HEAD -> master)
+       Author: Raghu M N <nraghu@zeomega.com> 
+       Date:   Tue Nov 23 11:02:26 2021 +0530
+
+git pull url of your remote repository
+
+3)Modifiying the already exsiting files, then uploading the files from local repository (pc) into remote repository
+
+open the GiHub bash in folder, in which folder, the files are uploading by right click on mouse
+git init
+git add .
+git status -->this shows the files which are modified
+git commit -m "uploading the modified files"
+git push origin master
+go to your repository --.click on branch-->click on new pull request-->click on create pull request
+-->click on merge full request-->click on confirm merge
+
+go to your repo 
+
+
+4)Deleting the files in local repository and restoring again into same folder
+
+open the GiHub bash in folder, in which folder, the files are deleting and restoring by right click on mouse
+git init  --->initiaziting the Git in this folder means creating working repository
+git add . --->adding the files in the folder into staged area for tracking
+git status ---> checking the status
+git commit -m "commit name"
 
 git log
        commit da3aa87eafd9e4f93979de1d3285bd3aaaaa85d8 (HEAD -> master)
@@ -34,7 +62,7 @@ esp :wq
 git checkout HEAD~1 filename or (git restore --staged filename and then git restore filename)
 
 
-3) creating a repository in GitHub using HTTP (this method is easy)
+5) creating a repository in GitHub using HTTP (this method is easy)
 
 create repository manually in github
 open the GitHub bash in the folder, which folder files you want to upload
@@ -44,7 +72,7 @@ git remote -v
 git push origin master
 
 
-4) creating a repository in GitHub using SSH
+6) creating a repository in GitHub using SSH
 git status
 ls -lrt
 ssh-keygen
@@ -67,15 +95,14 @@ git log --oneline
 
 
 
-5)ignoring some files and uploading remaining files
+7)ignoring some files and uploading remaining files
 
 open GitHub bash in the folder, which folder files you want to upload
 type--> touch .gitignore
-above command create .gitignore file, open that and type file name you want to ignore with extention like raghu.css
+From above command .gitignore file is created, open that and type file name you want to ignore with extention like raghu.css
 git init
 git add .
 git commit -m "uploading"
 git push url of your repository
 
 
-6) 
