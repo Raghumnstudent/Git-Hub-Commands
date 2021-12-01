@@ -1,3 +1,6 @@
+Creating folder using command promt-->mkdir foldername
+Creating folder using GitHub bash-->touch foldername
+
 1) creating the files in local repository(from pc) and uploading files into remote repository
 
 open the GiHub bash in folder, which folder files you want to upload by right click on mouse
