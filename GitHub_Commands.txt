@@ -1,5 +1,7 @@
-Creating folder using command promt-->mkdir foldername
+Creating folder using command promt-->mkdir foldername or git init nameoffolder
 Creating folder using GitHub bash-->touch foldername
+
+pwd ----> it is used to check  i am in which folder
 
 1) creating the files in local repository(from pc) and uploading files into remote repository
 
@@ -13,8 +15,9 @@ git log
        commit da3aa87eafd9e4f93979de1d3285bd3aaaaa85d8 (HEAD -> master)
        Author: Raghu M N <nraghu@zeomega.com> 
        Date:   Tue Nov 23 11:02:26 2021 +0530
-
-git push url of your remote repository (with url type .git at the end of url)
+git remote add origin url of your remote repository
+git remote -v   ----->checking remote origin add or not
+git push origin master
 like this -->https://github.com/Raghumnstudent/Raju.git
 
 2)Downloading  the file from remote repository into local repository (to your pc)
